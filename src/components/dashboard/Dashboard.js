@@ -13,20 +13,7 @@ class Dashboard extends Component {
 
 	// good place to load content
 	componentDidMount() {
-		fetch("https://nalukai-startups.herokuapp.com/api/startups")
-		  .then(res => res.json())
-		  .then(
-		    (result) => {
-		    	console.log(result)
-		    	//updateStartups(startups)
-		    },
-		    // Note: it's important to handle errors here
-		    // instead of a catch() block so that we don't swallow
-		    // exceptions from actual bugs in components.
-		    (error) => {
-		    	console.log('nick and morgan fucked up')
-		    }
-		  )
+		this.props.updateStartups()
 	}
 
 	/*
@@ -40,6 +27,7 @@ class Dashboard extends Component {
 	*/
 
 	render() {
+		
 		return (
 			<div className="white">
 				<nav className="z-depth-0 white">
@@ -66,7 +54,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		updateStartups: (startups) => {dispatch(updateStartups(startups))},
+		updateStartups: () => dispatch(updateStartups()),
 	}
 }
 

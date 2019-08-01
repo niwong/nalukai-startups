@@ -17,10 +17,16 @@ class StartupCard extends Component {
 		const {name, team, website, cohort, industry, logo} = this.props;
 
 		const TeamThing = (team) => {
-			const list = team.team.map(member => {
-				return (
-					`${member}  `
-				);
+			const list = team.team.map((member, i) => {
+				if (team.team.length === i + 1) {
+					return (
+						`${member}  `
+					);
+				} else {
+					return (
+						`${member},  `
+					);
+				}
 			})
 			return (
 				<div className="container memberCont">

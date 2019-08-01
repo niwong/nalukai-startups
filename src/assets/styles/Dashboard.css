@@ -34,6 +34,7 @@ nav h5 {
 	text-decoration: none;
 	color: black !important;
 	font-weight: 700;
+	font-size: 1.4em;
 }
 
 .startupCard .nameAndLogo h5:hover {
