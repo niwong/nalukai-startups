@@ -22,12 +22,11 @@ const initState = {
 }
 
 const startupReducer = (state = initState, action) => {
-	console.log(action.startups)
 	switch (action.type) {
 		case "UPDATE_STARTUPS": {
 			return {
 				...state,
-				startups: [...state.startups, action.startups]				
+				startups: action.startups				
 			}
 		}
 		default: {

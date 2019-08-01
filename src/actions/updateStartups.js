@@ -6,7 +6,7 @@ const updateStartups = () => {
 	    (result) => {
 			dispatch({
 	    		type: 'UPDATE_STARTUPS',
-	    		startups: result[0]
+	    		startups: result
 	    	})
 	    },
 	    // Note: it's important to handle errors here
