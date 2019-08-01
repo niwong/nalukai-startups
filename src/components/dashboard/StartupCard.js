@@ -13,9 +13,8 @@ import '../../assets/styles/Dashboard.css'
 class StartupCard extends Component {
 
 	render(){
-
-		const {name, team, website, cohort, industry, logo} = this.props;
-
+		
+		const {name, team, website, cohort, industry, desc, logo} = this.props;
 		const TeamThing = (team) => {
 			const list = team.team.map((member, i) => {
 				if (team.team.length === i + 1) {
@@ -40,6 +39,10 @@ class StartupCard extends Component {
 				<div className="col s12 m6 nameAndLogo">							
 					<img src={logo} alt={`${name}'s logo`} width="50px"/>
 					<a href={website}><h5>{name}</h5></a>
+				</div>
+				<div className="col s12 m4 infoCont">
+					<h6 className="grey-text lighten-1">Description</h6>
+					<p>{desc}</p>
 				</div>
 				<div className="col s12 m4 infoCont">
 					<h6 className="grey-text lighten-1">Team</h6>

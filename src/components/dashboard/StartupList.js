@@ -11,8 +11,8 @@ import '../../assets/styles/Dashboard.css'
 const StartupList = ({startups}) => {
 	const list = startups.map(startup => {
 		return (
-			<StartupCard key={startup.id} id={startup.id} name={startup.name} team={startup.team} website={startup.website} cohort={startup.cohort} industry={startup.industry} 
-			logo={startup.logo}/>
+			<StartupCard key={startup.id} id={startup.id} name={startup.name} team={startup.team} website={startup.website} cohort={startup.cohort} industry={startup.industry}  
+			desc={startup.desc} logo={startup.logo}/>
 		);
 	})
 	return (
