@@ -1,0 +1,70 @@
+nav, div {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+nav {
+	height: 100px;
+	padding-left: 50px;
+}
+
+nav h5 {
+	margin-left: 20px;
+}
+
+.logo {
+	width: 75px;
+	height: 75px;
+	margin-left: 20px;
+}
+
+.StartupList {
+	width: 90%;
+}
+
+/* Card */
+
+.startupCard {
+	width: 100%;
+	border-top: 2px solid #bebebe;
+	display: flex;
+	align-items: center;
+}
+
+.startupCard .nameAndLogo h5 {
+	text-decoration: none;
+	color: black !important;
+	font-weight: 700;
+}
+
+.startupCard .nameAndLogo h5:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.startupCard h5, p {
+	display: inline !important;
+}
+
+.nameAndLogo {
+	display: flex;
+	align-items: center;
+}
+
+.nameAndLogo h5 {
+	margin-left: 20px;
+}
+
+.infoCont {
+	display: inline-block;
+	margin: 20px 20px;
+}
+
+.memberCont {
+	margin: 0px;
+	white-space: wrap;
+}
+
+
+.member:not(:first-child) {
+    margin-left: 10px;
+}
