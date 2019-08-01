@@ -29,32 +29,30 @@ class StartupCard extends Component {
 				}
 			})
 			return (
-				<div className="container memberCont">
+				<div className="memberCont">
 					<p>{list}</p>
 				</div>
 			);
 		}
 		
 		return (
-			<div className="row card z-depth-0">
-				<div className="col s12 startupCard">
-					<div className="col s3 nameAndLogo">							
-						<img src={logo} alt={`${name}'s logo`} width="50px"/>
-						<a href={website}><h5>{name}</h5></a>
-					</div>
-					<div className="col s4 infoCont">
-						<h6 className="grey-text lighten-1">Team</h6>
-						<TeamThing team={team}/>
-					</div>
-					<div className="col s2 infoCont">
-						<h6 className="grey-text lighten-1">Industry</h6>
-						<p>{industry}</p>
-					</div>
-					<div className="col s2 infoCont">
-						<h6 className="grey-text lighten-1">Cohort</h6>
-						<p>{cohort}</p>
-					</div>				
+			<div className="row card z-depth-0 startupCard">
+				<div className="col s12 m6 nameAndLogo">							
+					<img src={logo} alt={`${name}'s logo`} width="50px"/>
+					<a href={website}><h5>{name}</h5></a>
 				</div>
+				<div className="col s12 m4 infoCont">
+					<h6 className="grey-text lighten-1">Team</h6>
+					<TeamThing team={team}/>
+				</div>
+				<div className="col m2 infoCont">
+					<h6 className="grey-text lighten-1">Industry</h6>
+					<p>{industry}</p>
+				</div>
+				<div className="col m2 infoCont">
+					<h6 className="grey-text lighten-1">Cohort</h6>
+					<p>{cohort}</p>
+				</div>				
 			</div>
 		);
 	}

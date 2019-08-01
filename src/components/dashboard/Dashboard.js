@@ -30,16 +30,17 @@ class Dashboard extends Component {
 		
 		return (
 			<div className="white">
+				<div className="colorBeam"></div>
 				<nav className="z-depth-0 white">
 				    <div className="nav-wrapper valign-wrapper">
 				      <img src={logo} alt="Nalukai's Logo" className="logo"/>
 				      <h5 className="black-text">Nalukai Startups List</h5>
 				    </div>
 				  </nav>
-				<div className="container dashboard">
-					<div className="row">
-						<StartupList startups={this.props.startups}/>
-					</div>
+				<div className="dashboard">
+
+					<StartupList startups={this.props.startups}/>
+					
 				</div>
 			</div>
 		);

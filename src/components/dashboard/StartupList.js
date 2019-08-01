@@ -17,6 +17,7 @@ const StartupList = ({startups}) => {
 	})
 	return (
 		<div className="container StartupList">
+			<h5>Here is a list of startups created by founders at Nalukai Startup Camp, as of July 2019.</h5>
 			{ list }
 		</div>
 	);

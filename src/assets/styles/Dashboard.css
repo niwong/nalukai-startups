@@ -3,12 +3,24 @@ nav, div {
 }
 
 nav {
+	margin-top: 10px;
 	height: 100px;
 	padding-left: 50px;
 }
 
 nav h5 {
 	margin-left: 20px;
+}
+
+.colorBeam {
+	background:rgb(22, 174, 202);
+	width: 100%;
+	height: 10px;
+}
+
+.dashboard h5 {
+	width: 50%;
+	margin-bottom: 50px;
 }
 
 .logo {
@@ -28,6 +40,7 @@ nav h5 {
 	border-top: 2px solid #bebebe;
 	display: flex;
 	align-items: center;
+	padding: 20px 20px;
 }
 
 .startupCard .nameAndLogo h5 {
@@ -55,11 +68,6 @@ nav h5 {
 	margin-left: 20px;
 }
 
-.infoCont {
-	display: inline-block;
-	margin: 20px 20px;
-}
-
 .memberCont {
 	margin: 0px;
 	white-space: wrap;
@@ -69,3 +77,25 @@ nav h5 {
 .member:not(:first-child) {
     margin-left: 10px;
 }
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+	nav {
+		padding-left: 0px;  
+	}
+
+	.startupCard {
+		display: block !important;
+	}
+
+	.dashboard h5 {
+	width: 70%;
+	margin-bottom: 50px;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}*/
